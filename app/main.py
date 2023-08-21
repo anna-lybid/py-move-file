@@ -3,8 +3,8 @@ import os
 def move_file(command: str):
     commands, file_in, file_out = command.split()
     directory, file_out = file_out.rsplit("/", 1)
-    parent_directory = os.path.dirname(os.getcwd())
-    os.chdir(parent_directory)
+    # parent_directory = os.path.dirname(os.getcwd())
+    # os.chdir(parent_directory)
 
     res_path = ""
     for path in directory.split("/"):
